@@ -1,0 +1,8 @@
+#vendor
+test
+docker-compose.yml
+Dockerfile
+.env.example 
+.dockerignore 
+.gitignore
+.gitattributes
