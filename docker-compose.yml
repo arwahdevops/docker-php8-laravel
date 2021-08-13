@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+  web:
+    build: .
+    image: rvl_webserver
+    container_name: app-apache
+    restart: always
+    expose:
+      - 80
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - frontend
+    
+networks:
+  frontend:
+    name: app_network
