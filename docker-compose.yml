@@ -3,7 +3,7 @@ services:
   web:
     build: .
     image: rvl_webserver
-    container_name: app-apache
+    container_name: app-laravel
     restart: always
     expose:
       - 80
