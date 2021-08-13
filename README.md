@@ -1,4 +1,5 @@
 # PHP 8 - Laravel
+Docker : Latest \
 Webserver : Apache \
 PHP : 8.0.9 \
 Config : app.conf
