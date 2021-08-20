@@ -5,8 +5,8 @@ PHP : 8.0.9 \
 Config : app.conf
 # How to RUN
 docker-compose up --build -d
-# Info
-Jika folder vendor tidak dimasukan ke repo maka edit pada .dockerignore & tambahkan composer pada Dockerfile.
+# Test
+localhost:8081 or 127.0.0.1:8081
 # CI/CD
 Setup pada "secrets.HOST", "secrets.USERNAME", "secrets.PRIVATE_KEY" pada Actions secrets. \
 Belum menggunakan testing tinggal ditambahkan pada :
