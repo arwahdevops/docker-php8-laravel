@@ -6,7 +6,7 @@ Config : app.conf
 # How to RUN
 docker-compose up --build -d
 # Test
-localhost:8081 or 127.0.0.1:8081
+http://localhost:8081 or http://127.0.0.1:8081
 # CI/CD
 Setup pada "secrets.HOST", "secrets.USERNAME", "secrets.PRIVATE_KEY" pada Actions secrets. \
 Belum menggunakan testing tinggal ditambahkan pada :
