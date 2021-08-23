@@ -4,11 +4,10 @@ name: Deploy Production
 on:
   push:
     branches: [ master ]
-    
+
+jobs:    
 laravel-tests:
-
   runs-on: ubuntu-latest
-
   steps:
     - uses: actions/checkout@v2
     - name: Install Dependencies
