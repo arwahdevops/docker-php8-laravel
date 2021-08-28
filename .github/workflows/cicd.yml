@@ -22,5 +22,6 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       run: vendor/bin/phpunit
