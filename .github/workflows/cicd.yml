@@ -20,6 +20,7 @@ jobs:
       run: chmod -R 777 storage bootstrap/cache
   run-test:
     needs: setup
+    runs-on: ubuntu-latest
     steps:
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       run: vendor/bin/phpunit
