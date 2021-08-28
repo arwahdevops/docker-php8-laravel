@@ -17,7 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: [setup]
     steps:
-    - uses: setup
     - name: Install Dependencies
       run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
     - name: Generate key
