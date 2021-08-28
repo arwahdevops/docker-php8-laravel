@@ -6,17 +6,12 @@ on:
     branches: [ master ]
 
 jobs:
-  setup:
+  laravel-test:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Check .env
-      run: cp .env.example .env
-
-  test:
-    runs-on: ubuntu-latest
-    needs: [setup]
-    steps:
+      run: php -r "file_exists('.env') || copy('.env.example', '.env');"
     - name: Install Dependencies
       run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
     - name: Generate key
@@ -25,5 +20,3 @@ jobs:
       run: chmod -R 777 storage bootstrap/cache
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       run: vendor/bin/phpunit
-    - name: Run ls
-      run: ls -la
